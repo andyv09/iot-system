@@ -15,7 +15,14 @@ Components:
   - React Dashboard
 
 ### RUN
+
+#### Windows
+
+https://docs.docker.com/docker-for-windows/install/
+
+#### MacOS
 ```
+brew install --cask docker
 docker-compose up
 ```
 
