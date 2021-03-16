@@ -65,11 +65,12 @@ router.get("/onlineContainers", (req, res) =>{
 });
 
 router.get("/connectedDevices", (req, res) =>{
-  let querryResult;
+  let querryResult1 = [];
+  let querryResult2 = [];
   queryApi.queryRows(getMqtt1Devices, {
       next(row, tableMeta) {
         const o = tableMeta.toObject(row)
-        querryResult = o._value;
+        querryResult1.push(o._value)
       },
       error(error) {
         console.error(error)
@@ -79,14 +80,14 @@ router.get("/connectedDevices", (req, res) =>{
         queryApi.queryRows(getMqtt2Devices, {
           next(row, tableMeta) {
             const o = tableMeta.toObject(row)
-            querryResult += o._value;
+            querryResult2.push(o._value);
           },
           error(error) {
             console.error(error)
             res.send("error");
           },
           complete() {
-            res.send((querryResult -4).toString())
+            res.send((querryResult1[querryResult1.length - 1] + querryResult2[querryResult2.length - 1] - 4).toString())
           },
         });
       },
