@@ -1,0 +1,30 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+reactapp/iot-dashboard/node_modules
+reactapp/iot-dashboard/.pnp
+reactapp/iot-dashboard/.pnp.js
+
+# testing
+reactapp/iot-dashboard/coverage
+
+# production
+reactapp/iot-dashboard/build
+
+# misc
+reactapp/iot-dashboard/.DS_Store
+reactapp/iot-dashboard/.env.local
+reactapp/iot-dashboard/.env.development.local
+reactapp/iot-dashboard/.env.test.local
+reactapp/iot-dashboard/.env.production.local
+
+reactapp/iot-dashboard/npm-debug.log*
+reactapp/iot-dashboard/yarn-debug.log*
+reactapp/iot-dashboard/yarn-error.log*
+
+bridge/node_modules
+bridge2/node_modules
+
+carData.xml
+/slike
+/mosquitto-kafka-bridge
