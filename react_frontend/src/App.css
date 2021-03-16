@@ -1,0 +1,77 @@
+.App-header {
+  background-color: #282c34;
+  min-height: 20px;
+  color: white;
+  text-align:center;
+  padding-bottom: 10px;
+}
+
+.App {
+  background-color: #282c34;
+  height: 100vh;
+  color: whitesmoke
+}
+.App-link {
+  color: #61dafb;
+}
+
+.statsTable, td{
+  margin-top: 5%;
+  border: 4px solid whitesmoke;
+  padding: 15px;
+  color:whitesmoke;
+  font: 28px sans-serif;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.statsTableData{
+  color:#61dafb;
+  font: 88px sans-serif;
+  text-align: center;
+  padding: 15px;
+}
+
+.statsTableData:hover{
+  color:#61dafb;
+  font: 88px sans-serif;
+  text-align: center;
+  padding: 15px;
+  background-color: #343a40;
+}
+
+.statsTableOnline{
+  color:greenyellow;
+  font: 88px sans-serif;
+  text-align: center;
+  padding: 15px;
+}
+
+.statsTableOffline{
+  color: #f04628;
+  font: 88px sans-serif;
+  text-align: center;
+  padding: 15px;
+}
+
+.statsTableOnline:hover{
+  color:greenyellow;
+  font: 88px sans-serif;
+  text-align: center;
+  padding: 15px;
+  background-color: #343a40;
+}
+
+.statsTableOffline:hover{
+  color: #f04628;
+  font: 88px sans-serif;
+  text-align: center;
+  padding: 15px;
+  background-color: #343a40;
+}
+
+.locationMarker{
+  color:#61dafb;
+  font: 24px sans-serif;
+}
