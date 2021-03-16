@@ -147,6 +147,15 @@ services:
       replicas: 1
       restart_policy:
         condition: on-failure
+  kafka-topics-creator:
+    build: ./kafka-topics-creator
+    container_name: kafka-topics-creator
+    depends_on:
+      - zookeeper
+      - kafka1
+    environment:
+      ZOOKEEPER_HOSTS: "zookeeper:2181"
+      KAFKA_TOPICS: "test-streams kafka-influx-bridge notification-output-test"
   # Kafka Streams App
   kafka-streams:
     container_name: streams_app
