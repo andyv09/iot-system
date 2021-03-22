@@ -4,15 +4,6 @@
 
 Scalable and highly available system. Can be scaled both vertically and horizontally.
 
-Components:
-  - Mosquitto Broker Cluster
-  - MQTT-Kafka Bridge
-  - Kafka Cluster
-  - Kafka Streams
-  - InfluxDB
-  - Telegraf
-  - Express Proxy
-  - React Dashboard
 
 ### RUN
 
@@ -25,6 +16,7 @@ https://docs.docker.com/docker-for-windows/install/
 # In Project folder
 brew install --cask docker
 docker-compose up
+#Dashboard is running on localhost:8086/
 ```
 
 ### CREDITS
