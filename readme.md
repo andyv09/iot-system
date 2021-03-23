@@ -16,7 +16,8 @@ https://docs.docker.com/docker-for-windows/install/
 # In Project folder
 brew install --cask docker
 docker-compose up
-#Dashboard is running on localhost:8086/
+#InfluxDB is running on localhost:8086/ username=admin password=passwordpasswordpassword
+#Dashboard is running on localhost:3000
 ```
 
 ### CREDITS
