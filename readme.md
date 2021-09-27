@@ -1,4 +1,4 @@
-# Simulation of scalable IoT System
+# Simulator of scalable IoT System
 
 ### Description
 
